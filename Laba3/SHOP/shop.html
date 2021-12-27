@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shop</title>
+    <link rel="stylesheet" href="./CSS-SHOP/filter.css" />
+    <link rel="stylesheet" href="./CSS-SHOP/grid.css" />
+    <link rel="stylesheet" href="./CSS-SHOP/footer.css" />
+    <link rel="stylesheet" href="./CSS-SHOP/header-shop.css" />
+    <script type="text/javascript" src="./jquery-1.4.1.min.js"></script>
+    <script type="text/javascript" src="./script.js"></script>
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="header__inner">
+          <div class="header__logo">
+            <a class="name" href="../HOME/home.html">P<button class="btn__name"  onclick="document.location='../HOME/home.html'">o</button>STER GAL</a>
+          </div>
+
+          <nav class="nav">
+          
+            <a class="nav__link" href="../HOME/home.html">Home</a>
+            <a class="nav__link" href="../SHOP/shop.html">Shop</a>
+            <a class="nav__link" href="../ABOUT/about.html">About</a>
+            <a class="nav__link" href="../CONTACT2/contact.html">Contact</a>
+            <a class="nav__link-log" href="#">Log In</a>
+          </nav>
+        </div>
+      </div>
+    </header>
+<div class="all-content">
+  <div class="product__shop">
+    <div class="container">
+      <p>OUR</p>
+      <p>PRODUCTS</p>
+    </div>
+  </div>
+
+  <section class="section">
+    <div class="container">
+      <div class="first_block">
+        <div class="filter__name">
+          <p class="filter__name-by" href="">Filter by</p>
+          <hr class="hr__one" />
+        </div>
+        <div class="nav_block">
+          <nav class="nav__two">
+            <select name="pets" id="pet-select" class="sort__selected">
+              <option value="sort" class="sort__by">Sort by</option>
+              <option value="new" class="sort__new">Newest</option>
+              <option value="pricelow" class="sort__price-l">Price (low to high)</option>
+              <option value="pricehigh" class="sort__price-h">Price (high to low)</option>
+              <option value="nameA" class="sort__A">Name A-Z</option>
+              <option value="nameZ" class="sort__Z">Name Z-A</option>
+            </select>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </section>
+  <main>
+    <div class="container">
+      <div class="global_flex">
+        <div class="filter_block">
+          <div class="type__shop">
+            <div class="filtel__coll">
+              <ul class="tree" id="tree">
+                <li class="drop__down-col">Collection
+                  <ul>
+                    <li href="" class="filter__coll-all">All</li>
+                  <li href="" class="filter__coll-nav">Tropical Collection</li>
+                  <li href="" class="filter__coll-nav">Freedom Collection</li>
+                  <li href="" class="filter__coll-nav">Prickly Collection</li>
+                  </ul>
+                </li>
+               
+               
+              </ul>
+             
+            </div>
+            <hr class="hr__one" />
+            <div class="filter__price">
+              <p class="drop__down-price">Price</p>
+            </div>
+            <hr class="hr__one" />
+            <div class="filter__color">
+              <p class="drop__down-color">Color</p>
+              <button class="btn-color-1"></button>
+              <button class="btn-color-2"></button>
+              <button class="btn-color-3"></button>
+              <button class="btn-color-4"></button>
+              <button class="btn-color-5"></button>
+              <button class="btn-color-6"></button>
+            </div>
+          </div>
+        </div>
+
+        <div class="second_global">
+          <div class="flex_first_block">
+            <div
+              class="shop_block"
+              onclick="document.location='../product1/product-1.html'"
+            >
+            
+              <img class="photo_shop" src="../SHOP/PHOTO-SHOP/1.webp" />
+              <div class="product-list">
+                <h3 class="name__product">I'M A</h3>
+                <h3 class="name__product-two">PRODUCT</h3>
+                <hr class="hr__grid" />
+                <span class="price">$25.00</span>
+               
+              </div>
+            </div>
+            <div
+              class="shop_block"
+              onclick="document.location='../product2/product-2.html'"
+            >
+            <img class="photo_shop" src="../SHOP/PHOTO-SHOP/2.webp" />
+              <div class="product-list">
+                <h3 class="name__product">I'M A</h3>
+                <h3 class="name__product-two">PRODUCT</h3>
+                <hr class="hr__grid" />
+                <span class="price">$35.00</span>
+               
+              </div>
+            </div>
+            <div
+              class="shop_block"
+              onclick="document.location='../product3/product-3.html'"
+            >
+            <img class="photo_shop" src="../SHOP/PHOTO-SHOP/3.webp" />
+              <div class="product-list">
+                <h3 class="name__product">I'M A</h3>
+                <h3 class="name__product-two">PRODUCT</h3>
+                <hr class="hr__grid" />
+                <span class="price">$30.00</span>
+               
+              </div>
+            </div>
+          </div>
+
+          <div class="flex_second_block">
+            <div
+              class="shop_block"
+              onclick="document.location='../product4/product-4.html'"
+            >
+            <img class="photo_shop" src="../SHOP/PHOTO-SHOP/4.webp" />
+              <div class="product-list">
+                <h3 class="name__product">I'M A</h3>
+                <h3 class="name__product-two">PRODUCT</h3>
+                <hr class="hr__grid" />
+                <span class="price">$25.00</span>
+                
+              </div>
+            </div>
+            <div
+              class="shop_block"
+              onclick="document.location='../product5/product-5.html'"
+            >
+            <img class="photo_shop" src="../SHOP/PHOTO-SHOP/5.webp" />
+              <div class="product-list">
+                <h3 class="name__product">I'M A</h3>
+                <h3 class="name__product-two">PRODUCT</h3>
+                <hr class="hr__grid" />
+                <span class="price">$25.00</span>
+               
+              </div>
+            </div>
+            <div
+              class="shop_block"
+              onclick="document.location='../product6/product-6.html'"
+            >
+            <img class="photo_shop" src="../SHOP/PHOTO-SHOP/6.webp" />
+              <div class="product-list">
+                <h3 class="name__product">I'M A</h3>
+                <h3 class="name__product-two">PRODUCT</h3>
+                <hr class="hr__grid" />
+                <span class="price">$30.00</span>
+                
+              </div>
+            </div>
+          </div>
+
+          <div class="flex_third_block">
+            <div
+              class="shop_block"
+              onclick="document.location='../product7/product-7.html'"
+            >
+            <img class="photo_shop" src="../SHOP/PHOTO-SHOP/7.webp" />
+              <div class="product-list">
+                <h3 class="name__product">I'M A</h3>
+                <h3 class="name__product-two">PRODUCT</h3>
+                <hr class="hr__grid" />
+                <span class="price">$25.00</span>
+               
+              </div>
+            </div>
+            <div
+              class="shop_block"
+              onclick="document.location='../product-8.html'"
+            >
+            <img class="photo_shop" src="../SHOP/PHOTO-SHOP/8.webp" />
+
+              <div class="product-list">
+                <h3 class="name__product">I'M A</h3>
+                <h3 class="name__product-two">PRODUCT</h3>
+                <hr class="hr__grid" />
+                <span class="price">$35.00</span>
+               
+              </div>
+            </div>
+            <div
+              class="shop_block"
+              onclick="document.location='../product9/product-9.html'"
+            >
+            <img class="photo_shop" src="../SHOP/PHOTO-SHOP/9.webp" />
+              
+              <div class="product-list">
+                <h3 class="name__product">I'M A</h3>
+                <h3 class="name__product-two">PRODUCT</h3>
+                <hr class="hr__grid" />
+                <span class="price">$25.00</span>
+               
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+</div>
+
+      <div class="footer">
+        <div class="info__footer">
+          <span class="text__footer"
+            >Subscribe and stay on top of our latest news and promotions</span
+          >
+        </div>
+        <div class="input">
+          <input
+            type="text"
+            placeholder="Enter your email here"
+            name="emaill"
+            class="emaill"
+          />
+          <button class="power">Subscribe</button>
+        </div>
+        <div class="icons">
+          <ul class="social-icons">
+            <li>
+              <a href="http://www.facebook.com"><img src="../HOME/HOME-PHOTO/facebook.png" /></a>
+            </li>
+            <li>
+              <a href="http://www.facebook.com"><img src="../HOME/HOME-PHOTO/twitter.png" /></a>
+            </li>
+            <li>
+              <a href="https://www.instagram.com/" ><img src="../HOME/HOME-PHOTO/instagram.png" /></a>
+            </li>
+          </ul>
+        </div>
+        <div class="under__footer">
+          <span class="text__under"
+            >© 2023 by Poster Gal. Proudly created with Wix.com</span
+          >
+        </div>
+      </div>
+    </main>
+    <script type="text/javascript">
+      $(document).ready(function() {
+          $(".all-content, .footer").css("display", "none");
+      
+          $(".all-content, .footer").fadeIn(2000);
+      
+        $("a").click(function(event){
+          event.preventDefault();
+          linkLocation = this.href;
+          $(".all-content, .footer").fadeOut(1000, redirectPage);
+        });
+      
+        function redirectPage() {
+          window.location = linkLocation;
+        }
+      });
+      </script>
+  </body>
+</html>

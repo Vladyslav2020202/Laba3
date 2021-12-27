@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About</title>
+    <link rel="stylesheet" href="../ABOUT/CSS-ABOUT/content-about.css" />
+    <link rel="stylesheet" href="../ABOUT/CSS-ABOUT/header-about.css" />
+    <link rel="stylesheet" href="../ABOUT/CSS-ABOUT/footer.css" />
+    <script type="text/javascript" src="./jquery-1.4.1.min.js"></script>
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="header__inner">
+          <div class="header__logo">
+            <a class="name" href="../HOME/home.html">P<button class="btn__name"  onclick="document.location='../HOME/home.html'">o</button>STER GAL</a>
+          </div>
+
+          <nav class="nav">
+            <a class="nav__link" href="../HOME/home.html">Home</a>
+            <a class="nav__link" href="../SHOP/shop.html">Shop</a>
+            <a class="nav__link" href="../ABOUT/about.html">About</a>
+            <a class="nav__link" href="../CONTACT2/contact.html">Contact</a>
+            <a class="nav__link-log" href="#">Log In</a>
+          </nav>
+        </div>
+      </div>
+    </header>
+    
+      <main class="all">
+        <div class="mainmain">
+          <img class="image2" src="../ABOUT/PHOTO-ABOUT/1.png" alt="Maya" />
+  
+          <div class="content_two">
+            <div class = "block">
+              <div class="title">
+                <p class="text-title">Hello!</p>
+              </div>
+              <div class="info-title">
+                <p class="info-text">MY NAME IS NORA</p>
+              </div>
+  
+              <div class="info-end_first">
+                <span class="text-end_first"
+                  >I'm a paragraph. Click here to add your own text and edit me.
+                  It’s easy. Just click “Edit Text” or double click me to add your
+                  own content and make changes to the font. Feel free to drag and
+                  drop me anywhere you like on your page. I’m a great place for
+                  you to tell a story and let your users know a little more about
+                  you.
+                </span>
+              </div>
+              <br>
+              <div class="info-end_second">
+                <span class="text-end_second">
+                  This is a great space to write long text about your company and
+                  your services. You can use this space to go into a little more
+                  detail about your company. Talk about your team and what
+                  services you provide.</span
+                >
+              </div>
+              <br>
+              <div class="info-btn">
+  <a href="../SHOP/shop.html" class="about-btn">View My Work</a>
+              </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+      <div class="footer">
+        <div class="info__footer">
+          <span class="text__footer">Subscribe and stay on top of our latest news and promotions</span> 
+         </div>
+          <div class="input">
+                             <input type="text" placeholder="Enter your email here" name="emaill" class="emaill">
+                             <button class="power">Subscribe</button>
+     
+             </div>
+             <div class="icons">
+              <ul class="social-icons">
+                <li>
+                  <a href="http://www.facebook.com"><img src="../HOME/HOME-PHOTO/facebook.png" /></a>
+                </li>
+                <li>
+                  <a href="http://www.facebook.com"><img src="../HOME/HOME-PHOTO/twitter.png" /></a>
+                </li>
+                <li>
+                  <a href="https://www.instagram.com/" ><img src="../HOME/HOME-PHOTO/instagram.png" /></a>
+                </li>
+              </ul>
+             </div>
+             <div class="under__footer">
+               <span class="text__under">© 2023 by Poster Gal. Proudly created with Wix.com</span>
+             </div>
+      </div>
+    
+      <script type="text/javascript">
+        $(document).ready(function() {
+            $(".all, .footer").css("display", "none");
+        
+            $(".all, .footer").fadeIn(2000);
+        
+          $("a").click(function(event){
+            event.preventDefault();
+            linkLocation = this.href;
+            $(".all, .footer").fadeOut(1000, redirectPage);
+          });
+        
+          function redirectPage() {
+            window.location = linkLocation;
+          }
+        });
+        </script>
+   
+  </body>
+</html>

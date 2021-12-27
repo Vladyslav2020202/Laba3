@@ -1,0 +1,97 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;900&display=swap");
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-weight: 400;
+}
+
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+p,
+ul,
+ol,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  position: relative;
+
+  left: 0%;
+  right: 0%;
+  top: 0px;
+}
+
+.header__inner {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 85%;
+  margin-left: 100px;
+  padding: 35px 0;
+}
+
+.name {
+  font-size: 24px;
+  line-height: 25px;
+  color: black;
+  text-decoration: none;
+}
+.btn__name {
+  background-color: white;
+  color: black;
+  font-size: 20px;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  cursor: pointer;
+}
+.name::before {
+  content: "";
+
+  width: 15px;
+  height: 15px;
+  position: absolute;
+  left: 125px;
+  bottom: 66px;
+}
+
+.name-work {
+  font-weight: normal;
+  font-size: 17px;
+  line-height: 20px;
+}
+
+.nav__link {
+  margin-left: 50px;
+  text-decoration: none;
+  color: black;
+  font-size: 16px;
+  font-family: "Playfair Display", serif;
+}
+.nav__link-log {
+  color: orange;
+  text-decoration: none;
+  margin-left: 50px;
+}
+
+.nav__link:hover,
+.nav__link_active {
+  color: orange;
+}
+.nav__link:nth-child(3) {
+  color: orange;
+}
+@media (max-width: 600px) {
+}

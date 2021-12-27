@@ -1,0 +1,149 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Italianno&display=swap");
+* {
+  box-sizing: border-box;
+}
+html {
+  font-family: "Playfair Display", serif;
+  font-size: 16px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+p,
+ul,
+ol,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.info {
+  padding-bottom: 60px;
+}
+
+.image2 {
+  background: url(./1.png) cover no-repeat;
+  width: 50%;
+
+  object-fit: cover;
+}
+
+.mainmain {
+  display: flex;
+  height: 700px;
+}
+
+.content_two {
+  background-color: rgb(204, 234, 234);
+  width: 50%;
+}
+
+.text-title {
+  font-size: 25px;
+  line-height: 30px;
+  font-family: "Italianno", cursive;
+}
+.info-text {
+  font-weight: normal;
+  font-size: 25px;
+  line-height: 40px;
+}
+
+.text-end_first {
+  font-weight: normal;
+  font-size: 17px;
+  line-height: 25px;
+}
+
+.text-end_second {
+  font-weight: normal;
+  font-size: 17px;
+  line-height: 25px;
+}
+
+.block {
+  display: flex;
+  flex-direction: column;
+
+  width: 428px;
+  padding-left: 100px;
+  padding-top: 80px;
+}
+.info-btn {
+  padding-bottom: 80px;
+}
+.about-btn {
+  padding-bottom: 80px;
+  background-color: rgb(204, 234, 234);
+  border: none;
+  text-decoration: underline;
+  font-size: 14px;
+  color: black;
+}
+.link:hover {
+  cursor: pointer;
+}
+@media (max-width: 600px) {
+  .image2 {
+    width: 50%;
+    height: 22%;
+
+    object-fit: cover;
+  }
+  .mainmain {
+    display: flex;
+    height: 900px;
+  }
+
+  .content_two {
+    background-color: rgb(204, 234, 234);
+    width: 90%;
+  }
+
+  .text-title {
+    font-size: 25px;
+    line-height: 30px;
+    font-family: "Italianno", cursive;
+  }
+  .info-text {
+    font-weight: normal;
+    font-size: 25px;
+    line-height: 40px;
+  }
+
+  .text-end_first {
+    font-weight: normal;
+    font-size: 17px;
+    line-height: 25px;
+  }
+
+  .text-end_second {
+    font-weight: normal;
+    font-size: 17px;
+    line-height: 25px;
+  }
+
+  .block {
+    display: flex;
+    flex-direction: column;
+
+    width: 500px;
+    padding-left: 100px;
+    padding-top: 80px;
+  }
+  .info-btn {
+    padding-bottom: 80px;
+  }
+  .about-btn {
+    padding-bottom: 80px;
+    background-color: rgb(204, 234, 234);
+    border: none;
+    text-decoration: underline;
+    font-size: 14px;
+    color: black;
+  }
+}

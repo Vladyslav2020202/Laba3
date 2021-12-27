@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact</title>
+    <link rel="stylesheet" href="../CONTACT2/CSS-CONTACT/footer.css" />
+    <link rel="stylesheet" href="../CONTACT2/CSS-CONTACT/header-contact.css">
+    <link rel="stylesheet" href="../CONTACT2/CSS-CONTACT/style.css">
+    <script type="text/javascript" src="./jquery-1.4.1.min.js"></script>
+    
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="header__inner">
+          <div class="header__logo">
+            <a class="name" href="../HOME/home.html">P<button class="btn__name"  onclick="document.location='../HOME/home.html'">o</button>STER GAL</a>
+          </div>
+
+          <nav class="nav">
+            <a class="nav__link" href="../HOME/home.html">Home</a>
+            <a class="nav__link" href="../SHOP/shop.html">Shop</a>
+            <a class="nav__link" href="../ABOUT/about.html">About</a>
+            <a class="nav__link" href="../CONTACT2/contact.html">Contact</a>
+            <a class="nav__link-log" href="#">Log In</a>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <div class="all-content">
+      <div class="content">
+        <div class="container">
+          <p  class="start-page"> CONTACT</p>
+        
+            
+      
+        <div class="main-box">
+              <div class="contact">
+              <p class="contact__street">500 Terry Francois Street</p>
+              <p class="contact__town">San Francisco, CA 94158</p>
+              <div class="indent">—</div>
+              <p class="contact__call">Tel: 123-456-7890</p>
+              <a  href="#" class="contact__emaill">Email: info@mysite.com</a>
+              <div class="icons">
+                
+                    <a  href="http://www.facebook.com" target="_blank" ><img src='../CONTACT2/PHOTO-CONTACT/0fdef751204647a3bbd7eaa2827ed4f9.webp' class="image"/></a>
+                    <a   href="http://www.twitter.com" target="_blank" ><img src='../CONTACT2/PHOTO-CONTACT/c7d035ba85f6486680c2facedecdcf4d.webp' class="image"/></a>
+                    <a href="https://www.instagram.com/" target="_blank" ><img src='../CONTACT2/PHOTO-CONTACT/01c3aff52f2a4dffa526d7a9843d46ea.webp'class="image"/></a>
+                
+                </div>
+              </div>
+  
+              <div class="days">
+              <p class="days__hours">Opening hours</p>
+              <div class="indent">—</div>
+              <p class="days__normal">Mon - Fri: 9am - 8pm</p>
+              <p class="days__week-one">Saturday: 9am - 7pm</p>
+              <p class="days__week-two">Sunday: 10am - 6pm </p>
+              </div>
+  
+              <div class="post">
+                <form name="test" method="post" action="#" class="form">
+              
+                    <input type="text" name="name"  required  class="input" placeholder="Name">
+             
+              
+                  <input type="email" name="email"  required class="input" placeholder="Email">
+           
+             
+                  <input type="text" name="number"  required class="input" placeholder="Phone">
+         
+                  <textarea name="comment"  class="input__message" placeholder="Type your message here..."></textarea></p>
+  
+                  <button class="input__btn">Submit</button>
+          
+                </form>
+              
+                
+             </div>
+       </div>
+       </div>
+       </div>
+  
+  
+       <div>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1532.0336273841351!2d-122.38831779640726!3d37.770084221165284!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808f7e30a49dcf0f%3A0x97224833eb32cac5!2sCisco%20Meraki!5e0!3m2!1sen!2sua!4v1618220896609!5m2!1sen!2sua" width="100%" height="550" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+       </div>
+    </div>
+  
+      <div class="footer">
+      <div class="info__footer">
+        <span class="text__footer">Subscribe and stay on top of our latest news and promotions</span> 
+       </div>
+        <div class="input__footer">
+                           <input type="text" placeholder="Enter your email here" name="emaill" class="emaill">
+                           <button class="power">Subscribe</button>
+   
+           </div>
+           <div class="icons">
+            <ul class="social-icons">
+              <li>
+                <a href="http://www.facebook.com"><img src="../HOME/HOME-PHOTO/facebook.png" /></a>
+              </li>
+              <li>
+                <a href="http://www.facebook.com"><img src="../HOME/HOME-PHOTO/twitter.png" /></a>
+              </li>
+              <li>
+                <a href="https://www.instagram.com/" ><img src="../HOME/HOME-PHOTO/instagram.png" /></a>
+              </li>
+            </ul>
+           </div>
+           <div class="under__footer">
+             <span class="text__under">© 2023 by Poster Gal. Proudly created with Wix.com</span>
+           </div>
+          </div>
+    
+    <script type="text/javascript">
+      $(document).ready(function() {
+          $(".content, .footer").css("display", "none");
+      
+          $(".content, .footer").fadeIn(2000);
+      
+        $("a").click(function(event){
+          event.preventDefault();
+          linkLocation = this.href;
+          $(".content, .footer").fadeOut(1000, redirectPage);
+        });
+      
+        function redirectPage() {
+          window.location = linkLocation;
+        }
+      });
+      </script>
+  </body>
+</html>
